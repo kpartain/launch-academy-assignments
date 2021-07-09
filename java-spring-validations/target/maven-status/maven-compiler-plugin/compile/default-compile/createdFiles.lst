@@ -1,0 +1,4 @@
+com\launchacademy\javaspringvalidations\DemoApplication.class
+com\launchacademy\javaspringvalidations\models\Idea.class
+com\launchacademy\javaspringvalidations\repositories\IdeaRepository.class
+com\launchacademy\javaspringvalidations\controllers\IdeasController.class
