@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:each="party : ${parties}">
+    <a th:href=" '/parties/' + ${party.id}">
+        <h2 th:text="${party.partyName}"></h2>
+    </a>
+<a th:href="'/parties/new'">Add a new party</a>
+</div>
+</body>
+</html>
