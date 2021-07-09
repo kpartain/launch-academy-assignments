@@ -1,0 +1,7 @@
+com\launchacademy\consumelater\controllers\UrlsApiV1Controller$UrlNotFoundAdvice.class
+com\launchacademy\consumelater\models\Url.class
+com\launchacademy\consumelater\seeders\UrlSeeder.class
+com\launchacademy\consumelater\controllers\UrlsApiV1Controller.class
+com\launchacademy\consumelater\DemoApplication.class
+com\launchacademy\consumelater\controllers\UrlsApiV1Controller$UrlNotFoundException.class
+com\launchacademy\consumelater\repositories\UrlRepository.class
