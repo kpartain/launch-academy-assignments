@@ -1,0 +1,6 @@
+com\launchacademy\diexample\models\BillingAddress.class
+com\launchacademy\diexample\initializers\CompanyAddressNotice.class
+com\launchacademy\diexample\models\MultipleLineAddressFormatter.class
+com\launchacademy\diexample\models\AddressFormatter.class
+com\launchacademy\diexample\models\SingleLineAddressFormatter.class
+com\launchacademy\diexample\DemoApplication.class
