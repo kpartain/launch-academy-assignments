@@ -1,0 +1,7 @@
+com\launchacademy\thymeleafViews\services\TripDatabaseBasedService.class
+com\launchacademy\thymeleafViews\services\TripService.class
+com\launchacademy\Main.class
+com\launchacademy\thymeleafViews\controllers\TripsController.class
+com\launchacademy\thymeleafViews\services\TripSessionBasedService.class
+com\launchacademy\thymeleafViews\models\Trip.class
+com\launchacademy\thymeleafViews\repositories\TripRepository.class
