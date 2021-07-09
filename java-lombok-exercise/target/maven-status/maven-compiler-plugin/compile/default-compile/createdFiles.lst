@@ -1,0 +1,5 @@
+com\example\lombokexercise\models\Train.class
+com\example\lombokexercise\controllers\TrainsController.class
+com\example\lombokexercise\DemoApplication.class
+com\example\lombokexercise\models\TrainNotFoundException.class
+com\example\lombokexercise\models\Station.class
