@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Space Monkeys</title>
+
+</head>
+<body>
+<h1>Banana Power</h1>
+<div class="viewscreen">
+    <h2 th:text="*{viewscreen.name}"></h2>
+    <h2 th:text="*{viewscreen.role}"></h2>
+    <h2 th:text="*{viewscreen.location}"></h2>
+    <h2 th:text="*{viewscreen.bananas}"></h2>
+</div>
+<div class="viewscreen">
+<h2 th:if="*{viewscreen.bananas lt 500}">Not enough nanas...</h2>
+</div>
+</body>
+</html>

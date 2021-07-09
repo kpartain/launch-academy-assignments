@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Space Monkeys</title>
+
+</head>
+<body>
+<h1>Banana Power</h1>
+
+<div class="viewscreen" th:each="viewscreen : ${viewscreens}">
+    <div class="viewscreen" th:object="${viewscreen}">
+        <h2 th:text="*{name}"></h2>
+        <h2 th:text="*{role}"></h2>
+        <h2 th:text="*{location}"></h2>
+    </div>
+</div>
+
+</body>
+</html>
