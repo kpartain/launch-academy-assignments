@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" th:action="@{/products}" th:object="${product}" method="POST">
+<!--name-->
+    <div>
+        <label th:for="name">Name of Item</label>
+        <input type="text" th:field="*{name}" />
+    </div>
+<!--price-->
+    <div>
+        <label th:for="price">Price</label>
+        <input type="text" th:field="*{price}" />
+    </div>
+<!--description-->
+    <div>
+        <label th:for="description">Description</label>
+        <input type="text" th:field="*{description}" />
+    </div>
+<!--    submit button-->
+    <input type="submit" value=Add item" />
+</body>
+</html>
