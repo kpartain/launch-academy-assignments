@@ -1,0 +1,4 @@
+com\launchacademy\javaspringdata\DemoApplication.class
+com\launchacademy\javaspringdata\repositories\IdeaRepository.class
+com\launchacademy\javaspringdata\models\Idea.class
+com\launchacademy\javaspringdata\seeders\IdeaSeeder.class
