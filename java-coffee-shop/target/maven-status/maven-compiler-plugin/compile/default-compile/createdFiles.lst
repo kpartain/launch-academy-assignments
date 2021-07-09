@@ -1,0 +1,5 @@
+com\launchacademy\javacoffeeshop\controllers\ProductsController.class
+com\launchacademy\javacoffeeshop\models\Product.class
+com\launchacademy\javacoffeeshop\services\ProductService.class
+com\launchacademy\javacoffeeshop\DemoApplication.class
+com\launchacademy\javacoffeeshop\services\ProductSessionRelatedService.class

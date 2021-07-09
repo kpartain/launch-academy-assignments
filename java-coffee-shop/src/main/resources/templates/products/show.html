@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>localhost:8080/products/show/{id}</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<h2 th:text="${product.name}"></h2>
+<h3 th:text="'Price: $' + ${product.price}"></h3>
+<h3 th:class=" 'caffeine-rating-' + ${product.caffeineRating}" th:text="'Caffeine Rating: ' + ${product.caffeineRating}"></h3>
+<q th:text="${product.description}" />
+<hr>
+<form action="#" th:action="@{'/products/show/{id}'(id=${product.id})}" th:object="${product}" th:method="DELETE">
+    <button type="submit" class="btn">
+        Delete this product
+    </button>
+</form>
+<hr>
+<a th:href=" '/products' ">Return to full menu</a>
+</body>
+</html>

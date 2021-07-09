@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>localhost:8080/products/new</title>
+    <style>
+        .oneliner li {
+            float: left;
+            clear: none;
+            display: inline-block;
+        }
+        th {
+            text-align:left;
+        }
+    </style>
+</head>
+<body>
+<h1>Add a new product</h1>
+<form action="#" th:action="@{/products}" th:object="${product}" method="post">
+    <div>
+        <label th:for="name">Product Name:
+            <input type="text" placeholder="name" name="name" th:field="*{name}" required/>
+        </label>
+    </div>
+    <br>
+    <!--    I was able to restrict decimal places using arrows but not restrict directly typed input - attempted to import -->
+    <!--    jquery and write custom onchange functions but did not work. value will round if user puts in 3rd decimal place -->
+    <!--    or above - if there an an easy solution to this I would love to know. Above the scope of Meets anyway. -->
+    <div>
+        <label th:for="price" th:class="currency">Product Price: $
+            <input type="number" step=".01" min="0.00" placeholder="0.00" name="price" th:field="*{price}" required/>
+        </label>
+    </div>
+    <br>
+    <div style="align:left">
+        <label th:for="description">Description of Product:</label>
+        <br>
+        <textarea name="description" rows="6" cols="75" th:field="*{description}"
+                  placeholder="Maybe it's the ritual of the cup, the spoon, the hot water, the milk, and the little heap of brown grit, the way they come together to form a nail I can hang the day on. It's something to do between being asleep and being awake.">
+    </textarea>
+    </div>
+    <br>
+    <div>Caffeine rating:
+        <ul class="oneliner" style="list-style-type:none">
+            <li>
+                <input type="radio" id="0" name="caffeineRating" value="0" th:field="*{caffeineRating}" required>
+                <label th:for="caffeineRating" style="color:red">0 - Low Level</label><br>
+            </li>
+            <li>
+                <input type="radio" id="1" name="caffeineRating" value="1" th:field="*{caffeineRating}">
+                <label th:for="caffeineRating" style="color:yellow">1 - Medium Level</label><br>
+            </li>
+            <li>
+                <input type="radio" id="2" name="caffeineRating" value="2" th:field="*{caffeineRating}">
+                <label th:for="caffeineRating" style="color:green">2 - High Level </label>
+            </li>
+        </ul>
+    </div>
+    <br><br>
+    <div class="align-left">
+        <input type="submit" value="add new product" />
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>localhost:8080/products</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<h1>All Products</h1>
+<hr>
+<div th:each="product : ${products}">
+    <h2 th:text="'Name: ' + ${product.name}"></h2>
+    <h3 th:text="'Price: $' + ${product.price}"></h3>
+    <h3 th:class=" 'caffeine-rating-' + ${product.caffeineRating}" th:text="'Caffeine Rating: ' + ${product.caffeineRating}"></h3>
+    <a th:href=" 'products/show/' + ${product.id}">click here for more or whatever</a>
+    <hr>
+</div>
+<a th:href="'products/new'">add a new product</a>
+</body>
+</html>
