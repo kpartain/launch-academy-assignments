@@ -1,0 +1,5 @@
+com\launchacademy\javastarships\services\StarShipService.class
+com\launchacademy\javastarships\controllers\StarshipsController.class
+com\launchacademy\javastarships\models\StarShip.class
+com\launchacademy\javastarships\services\StarShipSessionBasedService.class
+com\launchacademy\javastarships\DemoApplication.class

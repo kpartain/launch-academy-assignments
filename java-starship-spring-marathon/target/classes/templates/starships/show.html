@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout (~{::body})}">
+<body>
+<div th:object="${starship}">
+  <h1 th:text="*{name}"></h1>
+  <p class="description" th:text="*{description}"></p>
+  <p th:text="${starship.getFuelReading()}"></p>
+</div>
+<a th:href="'/starships'">Go Back</a>
+</body>
+</html>
