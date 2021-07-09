@@ -1,0 +1,24 @@
+<!--When I navigate to /fantasy/teams/new, I see a form to add a new Team to a league-->
+<!--Upon submitting the form, a POST request is sent to /fantasy/teams-->
+<!--For now, the existing "show" template should be rendered using the newly -->
+<!--created team (don't worry about redirecting at this point)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fantasy/teams/new</title>
+</head>
+<body>
+
+<h1>Add a New Team</h1>
+<form action="#" th:action="@{/fantasy/teams}" th:object="${team}" method="POST">
+    <label th:for="teamName">
+        Team Name
+        <input type="text" th:field="*{teamName}" />
+    </label>
+<!--    how to handle the list of players? -->
+<!--    two forms? one field per position, input player name?-->
+    <input type="submit" value="Add Team" />
+</form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a new Player</title>
+</head>
+<body>
+<h1>Add a new player</h1>
+<form action="#" th:action="@{/players/new}" th:object="${player}" method="post">
+<!--    consider adding a way to generate fields based on numbers selected-->
+
+<!--    do we need to say what team they're going to? how to implement?-->
+<!--    likely same logic here as needed to list the positions-->
+    <label th:for="name">
+        <input type="text" th:field="*{name}" />
+    </label>
+    <!--    find some way to create a drop down for each
+    position type using query logic handed to form?-->
+    <!--    for now, will have type as text box-->
+    <label th:for="position">
+        <input type="text" th:field="*{position}" />
+    </label>
+    <input type="submit" value="add player" />
+</form>
+</body>
+</html>

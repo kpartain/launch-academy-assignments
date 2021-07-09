@@ -1,0 +1,20 @@
+<!--When I navigate to /teams/<index in array>, I receive details about the team located
+at that index in the League's list of teams-->
+<!--    I should see the team's name, as well as a list of all of the players and their correlating positions-->
+<!--    If I attempt to access an index that is out of range for the list of teams, I receive a 404-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teams Show Page</title>
+</head>
+<body>
+
+<h1>Team Show Page</h1>
+<h2 th:text="${team.teamName}"></h2>
+<ul th:each="player, iterStat : ${players}" >
+    <li th:text="${player.name}"></li>
+    <li th:text="${player.position}"></li>
+</ul>
+</body>
+</html>
