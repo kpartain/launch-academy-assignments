@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:15:08:43 -0700] "GET /greetings/new HTTP/1.1" 200 830 http-bio-8080-exec-1 678
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:15:08:43 -0700] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-2 5
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:15:09:12 -0700] "POST /greetings HTTP/1.1" 200 8 http-bio-8080-exec-3 3
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:15:11:54 -0700] "POST /greetings HTTP/1.1" 200 268 http-bio-8080-exec-1 786
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:15:12:07 -0700] "GET /greetings/new HTTP/1.1" 200 830 http-bio-8080-exec-2 6
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:15:12:13 -0700] "POST /greetings HTTP/1.1" 200 262 http-bio-8080-exec-3 2
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:15:12:18 -0700] "GET /greetings/new HTTP/1.1" 200 830 http-bio-8080-exec-4 2
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:15:12:23 -0700] "POST /greetings HTTP/1.1" 200 266 http-bio-8080-exec-5 2
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:15:12:25 -0700] "GET /greetings/new HTTP/1.1" 200 830 http-bio-8080-exec-6 2
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:15:12:28 -0700] "POST /greetings HTTP/1.1" 200 248 http-bio-8080-exec-7 2
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:15:15:48 -0700] "GET /greetings/new HTTP/1.1" 200 830 http-bio-8080-exec-1 73
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:15:15:52 -0700] "POST /greetings HTTP/1.1" 200 268 http-bio-8080-exec-2 118
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:15:15:54 -0700] "GET /greetings/new HTTP/1.1" 200 830 http-bio-8080-exec-3 5
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:15:15:54 -0700] "POST /greetings HTTP/1.1" 200 248 http-bio-8080-exec-4 3
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:15:15:55 -0700] "GET /greetings/new HTTP/1.1" 200 830 http-bio-8080-exec-5 1
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:15:16:01 -0700] "POST /greetings HTTP/1.1" 200 257 http-bio-8080-exec-6 3
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:15:16:03 -0700] "GET /greetings/new HTTP/1.1" 200 830 http-bio-8080-exec-7 1
