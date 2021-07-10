@@ -5,13 +5,23 @@
 - Demonstrate the Use of Generics
 - Experiment with the `ArrayList` class
 
+## Getting Started
+
+```no-highlight
+et get java-array-list
+cd java-array-list
+idea .
+```
+
 ## Introduction
 
 In our cursory exploration of loops, we begin to see the need to maintain data in a set of some kind. Often, we want this set to be sorted in a specific order. In most programming languages, we use the construct of an Array to represent this idea of an ordered list. Java actually has numerous classes that already deal with the maintenance of the list. Let's take a look.
 
 ## What is an Array?
 
-In Java, an Array is an ordered collection of values. You can create an array by adding a '[]' after the type name. For example:
+In Java, an Array is an ordered collection of values. You can create an array by adding a '[]' after the type name. If you would like to code along we have provided a Main.java which you can put the examples in. You may need to delete or comment out previous examples for newer ones to work.
+
+For example:
 
 ```Java
 int[] prices = {34, 52, 85, 77};
@@ -28,6 +38,12 @@ System.out.println(prices[0]);
 
 //outputs the third product name
 System.out.println(productNames[2]);
+```
+
+If we'd like to see the full contents of our Array we can use `Arrays.toString();` as follows:
+
+```java
+System.out.println(Arrays.toString(productNames));
 ```
 
 We can also construct Arrays with the `new` keyword.
@@ -108,7 +124,7 @@ Back in Java 1.2, a series of classes called _collections_ were created. These a
 
 ## What are generics?
 
-Java provides a solution to some of its peskier issues tied to strict typing known as **generics**. Let's take a look at the approach:
+Java provides a solution to some of its peskier issues tied to strict typing known as **generics**. Add this inside your main method and let's take a look at the approach:
 
 ```Java
 ArrayList<String> list = new ArrayList<String>();
@@ -148,12 +164,13 @@ An [ArrayList](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java
 For the following commands we will show examples using the following ArrayList
 
 ```java
-public ArrayList<String> exampleArray = new ArrayList<>;
-exampleArray.add("Sisko")
-exampleArray.add("Picard")
-exampleArray.add("Janeway")
+ArrayList<String> exampleArray = new ArrayList<>;
+exampleArray.add("Sisko");
+exampleArray.add("Picard");
+exampleArray.add("Janeway");
 
 // exampleArray now equals ["Sisko", "Picard", "Janeway"]
+System.out.println(Arrays.toString(exampleArray));
 ```
 
 You can add to the ArrayList using the `add` command. When needed, it can even expand its array. We can also get and remove items from the ArrayList.
@@ -170,24 +187,27 @@ To see these in action:
 ```java
 exampleArray.add(1,"Kirk");
 //exampleArray = ["Sisko", "Kirk" "Picard", "Janeway"]
+System.out.println(Arrays.toString(exampleArray));
 
-exampleArray.add("Shepard")
+exampleArray.add("Shepard");
 //exampleArray = ["Sisko", "Kirk" "Picard", "Janeway", Shepard]
+System.out.println(Arrays.toString(exampleArray));
 
-exampleArray.get(2)
+exampleArray.get(2);
 //returns "Picard"
+System.out.println(Arrays.toString(exampleArray));
 
-exampleArray.remove(1)
+exampleArray.remove(1);
 //exampleArray = ["Sisko", "Picard", "Janeway", "Shepard"]
+System.out.println(Arrays.toString(exampleArray));
 
-exampleArray.remove("Shepard")
+exampleArray.remove("Shepard");
 //exampleArray = ["Sisko", "Picard", "Janeway"]
+System.out.println(Arrays.toString(exampleArray));
 
-exampleArray.clear()
+exampleArray.clear();
 //exampleArray = []
-
-
-
+System.out.println(Arrays.toString(exampleArray));
 ```
 
 There are a couple useful but miscellaneous methods
@@ -197,12 +217,13 @@ There are a couple useful but miscellaneous methods
 - `boolean isEmpty()` - Returns true if this list contains no elements.
 - `int lastIndexOf(Object o)` - Returns the index of the last occurrence of the specified element in this list, or -1 if this list does not contain the element.
 - `int size()` - Returns the number of elements in this list.
-- `void trimToSize()` - Trims the capacity of this ArrayList instance to be the list's current size.
+- `void trimToSize()` - Trims the capacity of this ArrayList instance to be the list's current size. This is useful to clear out any additional memory the ArrayList may be using, however an ArrayList will increase its capacity automatically if another item is added to it.
 
 ```java
 //exampleArray = = ["Sisko", "Kirk" "Picard", "Janeway", "Shepard"]
 exampleArray.contains("Kirk");
 //returns true
+
 exampleArray.contains("Warf");
 // returns false
 
@@ -247,6 +268,20 @@ Sam
 Shawna
 Brianna
 ```
+
+To break down the loop:
+```java
+for(String name : names) {
+  System.out.println(name);
+}
+```
+
+`for`: the method we are calling
+`String name`: the variable declaration for each item we iterate over
+`names`: the name of the ArrayList we are iterating over
+
+If you want a mnemonic (memory trick) for remembering the order of variable vs ArrayList you can read it as "For each name in the names array". The fact that we are declaring a type for the `name` is also a good indicator.
+
 
 ## The Data Structures Discussion Will Continue
 
